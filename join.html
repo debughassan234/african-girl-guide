@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Page not found | African Girl Guide</title>
-<meta name="description" content="This page could not be found.">
+<title>Join | African Girl Guide</title>
+<meta name="description" content="Join African Girl Guide as a girl, mentor or volunteer. Get mentorship, leadership training, state resources and earning opportunities.">
 <meta name="theme-color" content="#F6EFE3">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Page not found | African Girl Guide">
+<meta property="og:title" content="Join | African Girl Guide">
 <meta property="og:description" content="Education support, mentorship and leadership for the African girl child. Now live in Nigeria and Ghana.">
 <meta property="og:site_name" content="African Girl Guide">
 <meta name="twitter:card" content="summary_large_image">
@@ -62,13 +62,68 @@
 </header>
 
 <main id="main">
-<section class="page-hero"><div class="wrap">
-<span class="kicker">Page not found</span>
-<h1>This path doesn’t lead anywhere <em class="accent">yet.</em></h1>
-<p class="lede">The page may have moved. Head back home, or go straight to where you can help.</p>
-<div class="hero-actions"><a class="btn btn-dark btn-lg" href="index.html">Go to the homepage</a><a class="btn btn-primary btn-lg" href="donate.html">Donate</a></div>
-</div></section>
+<div class="kente kente-band" aria-hidden="true"></div>
+<section class="join" aria-labelledby="join-title">
+  <div class="wrap">
+    <div class="join-intro">
+      <span class="kicker">Join African Girl Guide</span>
+      <h1 id="join-title">Your next chapter <em class="accent">starts here.</em></h1>
+      <p class="lede">Sign up and our team will reach out to welcome you, match you with the right programmes, and let you know the moment the African Girl Guide app opens.</p>
+      <ul class="benefits">
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A4411F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>A mentor who guides you academically, emotionally and professionally</li>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A4411F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>A place in the 12-week Leadership Series</li>
+        <li id="state"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A4411F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>Funded resources for your state of origin through My State Resources</li>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A4411F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>Earning opportunities in the Girls Amazin’ Zone</li>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A4411F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>Support through NYSC and into your first job</li>
+      </ul>
+    </div>
+
+    <div class="form-card">
+      <form name="join" method="POST" action="join.html" data-netlify="true" netlify-honeypot="bot-field" data-ajax-form="join" novalidate>
+        <input type="hidden" name="form-name" value="join">
+        <p class="hp"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <h2>Tell us about you</h2>
+        <fieldset class="field full" style="border:0;padding:0;margin:0">
+          <legend class="lbl" style="margin-bottom:10px">I’m joining as</legend>
+          <div class="choice-row">
+            <label class="choice"><input type="radio" name="role" value="Girl or young woman" checked><span>A girl or young woman</span></label>
+            <label class="choice"><input type="radio" name="role" value="Mentor"><span>A mentor</span></label>
+            <label class="choice"><input type="radio" name="role" value="Volunteer"><span>A volunteer</span></label>
+          </div>
+        </fieldset>
+        <div class="form-grid">
+          <div class="field"><label for="j-name">Full name</label><input id="j-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="j-email">Email</label><input id="j-email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="j-phone">Phone or WhatsApp <span class="hint">(optional)</span></label><input id="j-phone" name="phone" type="tel" autocomplete="tel" placeholder="+234…"></div>
+          <div class="field"><label for="j-country">Country</label>
+            <select id="j-country" name="country" required>
+              <option value="">Select your country</option>
+              <option>Nigeria</option><option>Ghana</option><option>Other African country</option><option>Outside Africa</option>
+            </select></div>
+          <div class="field"><label for="j-state">State or region of origin</label><input id="j-state" name="state" type="text" placeholder="e.g. Lagos, Enugu, Greater Accra"></div>
+          <div class="field"><label for="j-stage">Where are you now?</label>
+            <select id="j-stage" name="stage" required>
+              <option value="">Choose one</option>
+              <option>Secondary school</option><option>University or polytechnic</option><option>NYSC</option><option>Recent graduate</option><option>Working professional</option>
+            </select></div>
+          <div class="field full"><label for="j-school">School, university or organisation</label><input id="j-school" name="institution" type="text" placeholder="e.g. University of Lagos"></div>
+          <div class="field full"><label for="j-msg">What would help you most right now? <span class="hint">(optional)</span></label><textarea id="j-msg" name="message"></textarea></div>
+        </div>
+        <label class="consent"><input type="checkbox" name="consent" value="yes" required>I agree to be contacted by African Girl Guide about programmes and opportunities. If I’m under 18, my parent or guardian knows I’m signing up.</label>
+        <p class="form-error" role="alert"></p>
+        <button class="btn btn-primary btn-lg" type="submit">Send my application</button>
+      </form>
+      <div class="success" data-success="join" hidden tabindex="-1">
+        <svg width="64" height="64" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#A4411F"/><path d="M8 32a12 12 0 0 1 24 0z" fill="#E2A33A"/><circle cx="20" cy="14.5" r="5.5" fill="#F6EFE3"/></svg>
+        <h2>Welcome. <em class="accent">You’re in.</em></h2>
+        <p>Thank you for joining African Girl Guide. Our team will be in touch soon by email or WhatsApp.</p>
+        <a class="btn btn-dark" href="leadership.html">Explore the Leadership Series</a>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
+
 <footer class="site-footer">
   <div class="kente kente-thin" aria-hidden="true"></div>
   <div class="wrap">

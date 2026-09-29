@@ -31,3 +31,9 @@ Note: the current africangirlguide.org site (and app.africangirlguide.org logins
 - **Newsletter:** set `NEWSLETTER_ENDPOINT` in the same file to your form endpoint (Formspree, Mailchimp, Kit…).
 - **WhatsApp:** set `WHATSAPP_NUMBER` in `assets/js/main.js` (international format, digits only, e.g. `2348012345678`). The WhatsApp buttons stay hidden until it's set. You can also change the pre-filled `WHATSAPP_MESSAGE`.
 - **Instagram:** the Instagram buttons open a direct message to @africangirlguide (`https://ig.me/m/africangirlguide`). Change the handle in the HTML files if it differs.
+
+## Forms (Join page + newsletter)
+Both forms use **Netlify Forms**, so submissions arrive in your Netlify dashboard.
+1. In Netlify open your site → **Forms** → **Enable form detection**.
+2. Make any small commit on GitHub (or click **Deploys → Trigger deploy**) so Netlify scans the pages.
+3. Submissions appear under **Forms → join** and **Forms → newsletter**. Under **Forms → Form notifications** you can get each one emailed to info@africangirlguide.org.

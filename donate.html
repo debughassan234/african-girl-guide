@@ -26,7 +26,7 @@
 <div class="utility">
   <div class="wrap">
     <div class="left"><span class="dot" aria-hidden="true"></span><span>Now live in Nigeria &amp; Ghana · An initiative of Paw Salvation, a registered 501(c)(3)</span></div>
-    <div class="links"><a href="https://app.africangirlguide.org/login">Log in</a><a href="https://app.africangirlguide.org/welcome">Register</a><a href="mailto:info@africangirlguide.org">info@africangirlguide.org</a></div>
+    <div class="links"><a href="join.html">Join as a girl</a><a href="leadership.html">Leadership Series</a><a href="mailto:info@africangirlguide.org">info@africangirlguide.org</a></div>
   </div>
 </div>
 
@@ -38,13 +38,13 @@
     </a>
     <nav class="nav-links" aria-label="Main">
       <a href="index.html#programs">Programs</a>
-      <a href="index.html#impact">Impact</a>
+      <a href="leadership.html">Leadership</a>
       <a href="about.html">Our Story</a>
       <a href="index.html#news">Newsroom</a>
       <a href="about.html#partner">Partner</a>
     </nav>
     <div class="nav-cta">
-      <a class="btn btn-outline join" href="https://app.africangirlguide.org/welcome">Join as a girl</a>
+      <a class="btn btn-outline join" href="join.html">Join as a girl</a>
       <a class="btn btn-primary" href="donate.html" aria-current="page">Donate <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
       <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1C1512" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16"/><path d="M4 16h16"/></svg></button>
     </div>
@@ -52,11 +52,11 @@
   <div class="mobile-menu" id="mobile-menu">
     <div class="wrap">
       <a class="big" href="index.html#programs">Programs</a>
-      <a class="big" href="index.html#impact">Impact</a>
+      <a class="big" href="leadership.html">Leadership Series</a>
       <a class="big" href="about.html">Our Story</a>
       <a class="big" href="index.html#news">Newsroom</a>
       <a class="big" href="about.html#partner">Partner with us</a>
-      <a class="btn btn-ghost-light" href="https://app.africangirlguide.org/welcome">Join as a girl</a>
+      <a class="btn btn-ghost-light" href="join.html">Join as a girl</a>
     </div>
   </div>
 </header>
@@ -144,7 +144,9 @@
   <div class="wrap">
     <div class="newsletter">
       <h2 class="h-lg">Stories of girls rising <em class="gold">once a month.</em></h2>
-      <form class="nl-form" data-newsletter novalidate>
+      <form class="nl-form" name="newsletter" method="POST" action="index.html" data-netlify="true" netlify-honeypot="bot-field" data-newsletter novalidate>
+        <input type="hidden" name="form-name" value="newsletter">
+        <p class="hp"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
         <label for="nl-email">Email address</label>
         <div class="nl-row"><input id="nl-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required><button class="btn btn-gold" type="submit">Subscribe</button></div>
         <p class="form-msg" role="status" aria-live="polite"></p>
@@ -155,8 +157,8 @@
         <a class="brand" href="index.html"><svg width="36" height="36" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#A4411F"/><path d="M8 32a12 12 0 0 1 24 0z" fill="#E2A33A"/><circle cx="20" cy="14.5" r="5.5" fill="#F6EFE3"/></svg><span class="name">African Girl Guide</span></a>
         <p>She learns. She leads. She thrives.</p>
       </div>
-      <div class="foot-col"><h3>About</h3><a href="about.html">Our story</a><a href="index.html#impact">Impact</a><a href="https://www.pawsalvation.com/">Paw Salvation</a><a href="https://www.africangirlguide.org/media">Media</a></div>
-      <div class="foot-col"><h3>Programs</h3><a href="https://www.africangirlguide.org/leadership">Leadership Series</a><a href="index.html#programs">Moving Library</a><a href="https://www.africangirlguide.org/state-resources">My State Resources</a><a href="index.html#programs">Mentorship</a></div>
+      <div class="foot-col"><h3>About</h3><a href="about.html">Our story</a><a href="index.html#impact">Impact</a><a href="https://www.pawsalvation.com/">Paw Salvation</a><a href="index.html#news">Media</a></div>
+      <div class="foot-col"><h3>Programs</h3><a href="leadership.html">Leadership Series</a><a href="index.html#programs">Moving Library</a><a href="join.html#state">My State Resources</a><a href="index.html#programs">Mentorship</a></div>
       <div class="foot-col"><h3>Get involved</h3><a href="donate.html">Donate</a><a href="mailto:info@africangirlguide.org?subject=I%20want%20to%20mentor">Mentor</a><a href="about.html#partner">Partner</a><a href="mailto:info@africangirlguide.org?subject=Volunteering">Volunteer</a></div>
       <div class="foot-col"><h3>Contact</h3><a href="mailto:info@africangirlguide.org">info@africangirlguide.org</a><a data-whatsapp href="https://wa.me/" target="_blank" rel="noopener">WhatsApp us</a><a href="https://ig.me/m/africangirlguide" target="_blank" rel="noopener">Instagram DM</a><span>Chicago, USA · Nigeria · Ghana</span><a href="https://www.instagram.com/africangirlguide">Instagram profile</a><a href="https://www.facebook.com/africangirlguide">Facebook</a><a href="https://www.youtube.com/africangirlguide">YouTube</a></div>
     </div>
