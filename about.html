@@ -595,6 +595,23 @@ em.gold { font-style: italic; color: var(--gold); }
   .cta-band .btn { width: 100%; }
 }
 
+/* ---------- Photography ---------- */
+.photo > img { z-index: 0; }
+.collage .c-circle, .collage .c-rect { overflow: hidden; }
+.collage .c-circle img, .collage .c-rect img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.photo.showcase > img.contain { object-fit: contain; padding: 28px 28px 64px; }
+.photo.graphic { justify-content: space-between; }
+.panel-quote { position: relative; z-index: 1; font-family: var(--serif); font-size: clamp(30px, 3.2vw, 46px); line-height: 1.08; color: #fff; max-width: 440px; }
+.photo.monogram { align-items: center; justify-content: center; }
+.photo.monogram > span:first-child { font-family: var(--serif); font-size: clamp(72px, 9vw, 150px); color: rgba(255,255,255,.92); line-height: 1; letter-spacing: -.02em; }
+.photo.monogram .cap { position: absolute; left: 18px; bottom: 18px; }
+.teaser .photo.monogram > span:first-child { font-size: 56px; }
+.founder .portrait .photo.monogram { display: flex; }
+.photo.banner { height: clamp(240px, 38vw, 520px); border-radius: 28px; margin-top: 18px; padding: 0; }
+.feature .photo.wide { border-radius: 28px; height: 440px; }
+.card-news .photo > img, .pillar .photo > img { transition: transform .5s ease; }
+.card-news:hover .photo > img, .pillar:hover .photo > img { transform: scale(1.04); }
+
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"NGO","name":"African Girl Guide","slogan":"She Learns. She Leads. She Thrives.","email":"info@africangirlguide.org","url":"https://www.africangirlguide.org","parentOrganization":{"@type":"NGO","name":"Paw Salvation","url":"https://www.pawsalvation.com"},"founder":{"@type":"Person","name":"Jindu Elueze"},"areaServed":["Nigeria","Ghana"],"sameAs":["https://www.instagram.com/africangirlguide","https://www.facebook.com/africangirlguide","https://www.youtube.com/africangirlguide"]}
@@ -648,6 +665,7 @@ em.gold { font-style: italic; color: var(--gold); }
     <span class="kicker">Our story</span>
     <h1 id="page-title">Compassion that crossed an ocean <em class="accent">and came home to her.</em></h1>
     <p class="lede">African Girl Guide is the African outreach of Paw Salvation, a Chicago-based 501(c)(3) nonprofit with more than eight years of community impact in the United States.</p>
+    <div class="photo ph banner"><img src="https://www.africangirlguide.org/_next/image?url=%2Fimg%2Fabout-page%2Fhero.png&amp;w=1920&amp;q=75" alt="The African Girl Guide community" loading="lazy" decoding="async"></div>
   </div>
 </section>
 <div class="kente kente-band" aria-hidden="true"></div>
@@ -655,8 +673,8 @@ em.gold { font-style: italic; color: var(--gold); }
 <section class="founder" aria-labelledby="founder-title">
   <div class="wrap">
     <div class="portrait">
-      <!-- Replace with: <img src="assets/img/founder.jpg" alt="Jindu Elueze"> inside this div -->
-      <div class="photo ph" role="img" aria-label="Jindu Elueze, Founder"><span class="cap">PHOTO · Jindu Elueze, Founder</span></div>
+      <!-- FOUNDER PHOTO: replace the <span>JE</span> below with <img src="founder.jpg" alt="Jindu Elueze, Founder"> -->
+      <div class="photo ph monogram" role="img" aria-label="Jindu Elueze, Founder"><span>JE</span><span class="cap">Jindu Elueze · Founder</span></div>
       <div class="route" aria-hidden="true">Lagos<br>Chicago<br>Accra</div>
     </div>
     <div class="copy">
@@ -676,7 +694,7 @@ em.gold { font-style: italic; color: var(--gold); }
 <section class="voices" aria-labelledby="board-title">
   <div class="wrap">
     <figure class="testimonial">
-      <div class="photo ph-s" role="img" aria-label="Chioma Okeke"></div>
+      <div class="photo ph-s"><img src="https://www.africangirlguide.org/_next/image?url=%2Fimg%2Ftestimonials%2F0.png&amp;w=640&amp;q=75" alt="Chioma Okeke" loading="lazy" decoding="async"></div>
       <div>
         <span class="mark" aria-hidden="true">“</span>
         <blockquote><p>I have enjoyed a lot of benefit, which has improved my career.</p></blockquote>

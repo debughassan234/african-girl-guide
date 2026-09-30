@@ -595,6 +595,23 @@ em.gold { font-style: italic; color: var(--gold); }
   .cta-band .btn { width: 100%; }
 }
 
+/* ---------- Photography ---------- */
+.photo > img { z-index: 0; }
+.collage .c-circle, .collage .c-rect { overflow: hidden; }
+.collage .c-circle img, .collage .c-rect img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.photo.showcase > img.contain { object-fit: contain; padding: 28px 28px 64px; }
+.photo.graphic { justify-content: space-between; }
+.panel-quote { position: relative; z-index: 1; font-family: var(--serif); font-size: clamp(30px, 3.2vw, 46px); line-height: 1.08; color: #fff; max-width: 440px; }
+.photo.monogram { align-items: center; justify-content: center; }
+.photo.monogram > span:first-child { font-family: var(--serif); font-size: clamp(72px, 9vw, 150px); color: rgba(255,255,255,.92); line-height: 1; letter-spacing: -.02em; }
+.photo.monogram .cap { position: absolute; left: 18px; bottom: 18px; }
+.teaser .photo.monogram > span:first-child { font-size: 56px; }
+.founder .portrait .photo.monogram { display: flex; }
+.photo.banner { height: clamp(240px, 38vw, 520px); border-radius: 28px; margin-top: 18px; padding: 0; }
+.feature .photo.wide { border-radius: 28px; height: 440px; }
+.card-news .photo > img, .pillar .photo > img { transition: transform .5s ease; }
+.card-news:hover .photo > img, .pillar:hover .photo > img { transform: scale(1.04); }
+
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"NGO","name":"African Girl Guide","slogan":"She Learns. She Leads. She Thrives.","email":"info@africangirlguide.org","url":"https://www.africangirlguide.org","parentOrganization":{"@type":"NGO","name":"Paw Salvation","url":"https://www.pawsalvation.com"},"founder":{"@type":"Person","name":"Jindu Elueze"},"areaServed":["Nigeria","Ghana"],"sameAs":["https://www.instagram.com/africangirlguide","https://www.facebook.com/africangirlguide","https://www.youtube.com/africangirlguide"]}
