@@ -612,6 +612,18 @@ em.gold { font-style: italic; color: var(--gold); }
 .card-news .photo > img, .pillar .photo > img { transition: transform .5s ease; }
 .card-news:hover .photo > img, .pillar:hover .photo > img { transform: scale(1.04); }
 
+/* ---------- Photo polish ---------- */
+.photo:has(> img) { background-image: none; background-color: #E6DCCB; }
+.photo > img { object-position: 50% 35%; }
+.collage .c-circle, .collage .c-rect { background-image: none; background-color: #E6DCCB; }
+.collage .c-circle img, .collage .c-rect img { object-position: 50% 30%; }
+.photo.showcase { background: #EFE6D8 !important; background-image: none !important; border: 1px solid var(--line); }
+.photo.showcase > img.contain { padding: 76px 40px 40px; filter: drop-shadow(0 18px 32px rgba(28,21,18,.16)); }
+.photo.graphic::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(18,13,10,.82) 0%, rgba(18,13,10,.35) 45%, rgba(18,13,10,.05) 75%); z-index: 0; }
+.photo.graphic > .badge, .photo.graphic > .panel-quote { z-index: 1; }
+.testimonial .photo.avatar { width: 240px; height: 240px; border-radius: 50%; justify-self: center; }
+@media (max-width: 900px) { .testimonial .photo.avatar { width: 160px; height: 160px; justify-self: start; } }
+
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"NGO","name":"African Girl Guide","slogan":"She Learns. She Leads. She Thrives.","email":"info@africangirlguide.org","url":"https://www.africangirlguide.org","parentOrganization":{"@type":"NGO","name":"Paw Salvation","url":"https://www.pawsalvation.com"},"founder":{"@type":"Person","name":"Jindu Elueze"},"areaServed":["Nigeria","Ghana"],"sameAs":["https://www.instagram.com/africangirlguide","https://www.facebook.com/africangirlguide","https://www.youtube.com/africangirlguide"]}
@@ -691,7 +703,7 @@ em.gold { font-style: italic; color: var(--gold); }
     </div>
     <div class="values" aria-label="Our values"><span>Dignity</span><span>Empowerment</span><span>Equality</span><span>Accessibility</span><span>Sustainability</span><span>Community</span><span>Transparency</span><span>Responsibility</span></div>
     <div class="legal">
-      <span>© <span data-year>2026</span> African Girl Guide. An initiative of Paw Salvation, a registered 501(c)(3) nonprofit · EIN [EIN]</span>
+      <span>© <span data-year>2026</span> African Girl Guide. Some photographs are illustrative. An initiative of Paw Salvation, a registered 501(c)(3) nonprofit · EIN [EIN]</span>
       <span class="links"><a href="https://www.africangirlguide.org/privacy">Privacy</a><a href="https://www.africangirlguide.org/terms">Terms</a></span>
     </div>
   </div>

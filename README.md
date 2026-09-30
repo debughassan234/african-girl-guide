@@ -1,16 +1,8 @@
-# African Girl Guide — website (self-contained build)
+# African Girl Guide — website
 
-Six pages, no folders: index.html, about.html, leadership.html, join.html, donate.html, 404.html
+Six self-contained pages: index, about, leadership, join, donate, 404.
+Update: GitHub → Add file → Upload files → drag in all six .html files → Commit changes.
 
-## Update the live site
-GitHub → repository main page → Add file → Upload files → drag in all six .html files → Commit changes.
+Photos: event photos (Week 1, EFCC, testimonial) are African Girl Guide's own. Other photos are free-licence images from Pexels and Unsplash (free for commercial use, no attribution required), noted in the footer as illustrative. Replace any of them with your own photos when you have them.
 
-## Photos
-Photos load from African Girl Guide's existing image library (africangirlguide.org and Cloudinary).
-Keep those images online, or send them over to be bundled into the site, before retiring the old website.
-
-Founder photo: in about.html, find "FOUNDER PHOTO" and follow the note.
-
-## Settings (near the bottom of each page, under `const SETTINGS`)
-- WHATSAPP_NUMBER, e.g. 2348012345678 (digits only)
-- DONATE_URL, your checkout link
+Settings (near the bottom of each page, `const SETTINGS`): WHATSAPP_NUMBER, DONATE_URL.
